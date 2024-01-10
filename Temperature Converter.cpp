@@ -3,12 +3,14 @@
 
 using namespace std;
 
+enum Choice {CelsiusToFahrenheitChoice = 1 , FahrenheitToCelsiusChoice = 2 , ExitChoice = 3};
+
 void PrintConversionMenu()
 {
 	cout << "-----------------------------------\n" <<
 		"CELSIUS TO FAHRENHEIT : 1\n" <<
 		"FAHRENHEIT TO CELSIUS : 2\n" <<
-		"EXIT : 0\n" <<
+		"EXIT                  : 3\n" <<
 		"-----------------------------------\n";
 
 }
@@ -43,30 +45,33 @@ void PrintFahrenheitToCelsius(double FahrenheitTemperature)
 	cout << "TEMPERATURE IN CELSIUS = " << FahrenheitToCelsius(FahrenheitTemperature) << " °C\n";
 }
 
+Choice ReadConversionMenuChoice()
+{
+	return (Choice)(ValidateNumberInRange(1, 3));
+}
+
 void TemperatureConverter()
 {
 	cout << "WELCOME TO TEMPERATURE CONVERTER\n";
 	Menu : do
 	{
 		PrintConversionMenu();
-		
-		unsigned Choice;
 
-		cin >> Choice;
+		Choice Choice = ReadConversionMenuChoice();
 
-		if (Choice == 1)
+		if (Choice == Choice::CelsiusToFahrenheitChoice)
 		{
 			double CelsiusTemperature = ReadTemperature("ENTER TEMPERATURE IN CELSIUS");
 			PrintCelsiusToFahrenheit(CelsiusTemperature);
 		}
 
-		else if (Choice == 2)
+		else if (Choice == Choice::FahrenheitToCelsiusChoice)
 		{
 			double FahrenheitTemperature = ReadTemperature("ENTER TEMPERATURE IN FAHRENHEIT");
 			PrintFahrenheitToCelsius(FahrenheitTemperature);
 		}
 
-		else if (Choice == 0)
+		else if (Choice == Choice::ExitChoice)
 		{
 			cout << "GOOD BYE :)\n";
 			break;

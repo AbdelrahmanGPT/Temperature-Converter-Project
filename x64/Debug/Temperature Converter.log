@@ -1,2 +1,17 @@
 ﻿  Temperature Converter.cpp
+C:\Users\AAMY\source\repos\Temperature Converter\ABODAstd.h(50,23): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+  (compiling source file 'Temperature%20Converter.cpp')
+  
+C:\Users\AAMY\source\repos\Temperature Converter\ABODAstd.h(62,23): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+  (compiling source file 'Temperature%20Converter.cpp')
+  
+C:\Users\AAMY\source\repos\Temperature Converter\ABODAstd.h(81,33): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+  (compiling source file 'Temperature%20Converter.cpp')
+  
+C:\Users\AAMY\source\repos\Temperature Converter\ABODAstd.h(105,33): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+  (compiling source file 'Temperature%20Converter.cpp')
+  
+C:\Users\AAMY\source\repos\Temperature Converter\ABODAstd.h(243,23): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+  (compiling source file 'Temperature%20Converter.cpp')
+  
   Temperature Converter.vcxproj -> C:\Users\AAMY\source\repos\Temperature Converter\x64\Debug\Temperature Converter.exe

@@ -218,7 +218,7 @@ namespace std
 
 		else
 		{
-			cout << "\n\nGOOD BYE :)\n\n";
+			cout << "\nGOOD BYE :)\n";
 			return 0;
 		}
 	}
